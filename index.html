@@ -1,15 +1,16 @@
 
 <!DOCTYPE html><html lang='en' class=''>
-<head>
+<head><script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/JunaidKhalid/pen/VrdgJK" />
 
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700i" rel="stylesheet">
+
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700i,900" rel="stylesheet">
 <link rel='stylesheet prefetch' href='https://mymediaelements.github.io/mejs-player/build/mediaelementplayer.css'><link rel='stylesheet prefetch' href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'><link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
 <style>body{
     background: #455A64
 }
 #main-wrapper{padding:100px 0;}
-#main-wrapper h1{margin:20px 0;color:#fff;font-family:Roboto, sans-serif;font-weight:900;}
+#main-wrapper h1{margin:20px 0;color:#fff;font-weight:900;}
 
 .player-wrapper {   border-radius: 5px;
 box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.25);
@@ -164,47 +165,21 @@ span.mejs__time-loaded {
  
 }</style></head><body>
 <div class="container" id="main-wrapper">
-  <h1>A Customized HTML5 Audio Player</h1>
-    <p>Complete Audio Player with Playlist</p>
-
+  <h1>A Customized HTML5 Audio Player with Playlist</h1>
 <div class="player-wrapper overlay">
 
-<ul class="playlist custom-counter" id="list">
-   <li><div class="track-info" >
-    <a href="#" data-value="/mejs-player/audio/Rain.mp3</a>
-    <span class="artist">Akcent</span>
-               </div>
-     </li>
-      
-   <li><div class="track-info" >
-    <a href="#" data-value="/mejs-player/audio/Incomplete.mp3">Incomplete</a>
-    <span class="artist">Backstreet boys </span>
-               </div>
- </li>
-      
-   <li><div class="track-info" >
-    <a href="#" data-value="/mejs-player/audio/Despacito.mp3">
-   Daspacito</a>
-    <span class="artist"> Luis Fonsi - Daddy Yankee</span>
-               </div>
-    
-        </li>
-      
-      
-    </ul>
-<audio class="mejs__player" controls="controls" src="">
+<ul class="playlist custom-counter" id="list"><li><div class="track-info" ><a href="#" data-value="/mejs-player/audio/Rain.mp3</a><span class="artist">Akcent</span></div></li><li><div class="track-info" ><a href="#" data-value="/mejs-player/audio/Incomplete.mp3">Incomplete</a><span class="artist">Backstreet boys </span></div></li><li><div class="track-info" ><a href="#" data-value="/mejs-player/audio/Despacito.mp3">Daspacito</a><span class="artist"> Luis Fonsi - Daddy Yankee</span></div></li></ul>
+<audio id="audio" class="mejs__player" controls="controls" src="">
   Your browser does not support the audio format.
 </audio>
- 
-</div>
-
-  <h1>A Customized HTML5 Audio Player with Playlist</h1>
-  <p>Single Audio File Without Playlist</p>
-<audio class="mejs__player" controls="controls">
-                                                          <source src=/mejs-player/audio/Despacito.mp3" type="audio/mpeg"></source>
-  Your browser does not support the audio format.
+    <h2>Just HTML5 Audio Player without Playlist</h1>
+<audio controls="controls">
+  <source src="/mejs-player/audio/Despacito.mp3" type="audio/mpeg"></source>
+  Your browser does not support the audio element.
 </audio>
 </div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script src='https://mymediaelements.github.io/mejs-player/build/mediaelement-and-player.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
 <script > // Dynamic URL change
 list.onclick = function(e) {
   e.preventDefault();
