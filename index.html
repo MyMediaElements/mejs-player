@@ -18,7 +18,8 @@
       <style>
 body{    background: #455A64
 }
-p{color: #fff!important;
+ul {color:#fff;}
+.text{color: #fff!important;
 font-size: 1.5rem!important;;margin:10px 0;font-weight:300;}
 #main-wrapper{padding:100px 0;}
 #main-wrapper h1{margin:20px 0;color:#fff;font-family:Roboto, sans-serif;font-weight:900;}
@@ -184,24 +185,24 @@ span.mejs__time-loaded {
 
   <div class="container" id="main-wrapper">
   <h1>A Customized HTML5 Audio Player with Playlist</h1>
-  <p>A complete and Unique HTML5 Audio Player with playlist that enables websites to play embedded audio files on web pages with totally customized interface and ability of playing files dynamically. Just click on the title of audio file and it will be dynamically played with in a customized HTML5 audio element player, with unique looks and features</p>
+  <p class="text">A complete and Unique HTML5 Audio Player with playlist that enables websites to play embedded audio files on web pages with totally customized interface and ability of playing files dynamically. Just click on the title of audio file and it will be dynamically played with in a customized HTML5 audio element player, with unique looks and features</p>
 <div class="player-wrapper">
 
 <ul class="playlist custom-counter" id="list">
    <li><div class="track-info" >
-    <a href="#" data-value="/mejs-player/audio/Rain.mp3"></a>
+    <a href="#" data-value="https://mymediaelements.github.io/mejs-player/audio/Rain.mp3">Rain</a>
     <span class="artist">Akcent</span>
                </div>
      </li>
       
    <li><div class="track-info" >
-    <a href="#" data-value="/mejs-player/audio/Incomplete.mp3">Incomplete</a>
+    <a href="#" data-value="https://mymediaelements.github.io/mejs-player/audio/Incomplete.mp3">Incomplete</a>
     <span class="artist">Backstreet boys </span>
                </div>
  </li>
       
    <li><div class="track-info" >
-    <a href="#" data-value="/mejs-player/audio/Despacito.mp3">Daspacito</a>
+    <a href="#" data-value="https://mymediaelements.github.io//mejs-player/audio/Despacito.mp3">Daspacito</a>
     <span class="artist"> Luis Fonsi - Daddy Yankee</span>
                </div>
     
@@ -209,13 +210,19 @@ span.mejs__time-loaded {
       
       
     </ul>
-<audio class="mejs__player" controls="controls" src="">
+<audio id="audio" class="mejs__player" controls="controls" src="">
   Your browser does not support the audio format.
 </audio>
  
 </div>
 
-<p>You may also use this player without playlist. for doing so you will have to put just an HTML5 Audio Element tag with <code>class="mejs__player"</code>
+<p class="text">You may also use this player without playlist. for doing so you will have to put just an HTML5 Audio Element tag with <code>class="mejs__player"</code></p>
+<ul style="list-style:none">
+<li>Customized HTML5 Audio Player</li>
+<li>Author: Junaid Khalid</li>
+<li>Create Date: 28-November 2017</li>
+<li>License: Licensed under MIT(http:wwww.mymediaelements.com)</li>
+</ul>
 </div>
 <!-- REAOURCES -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
