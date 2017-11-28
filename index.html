@@ -1,11 +1,10 @@
-
-
 <!DOCTYPE html>
 <html lang="en" >
 
 <head>
   <meta charset="UTF-8">
-  <title>A custom HTML5 Audio Playerwith Dynamic Playlist</title>
+  
+  <title>A custom HTML5 Audio Player with dynamic playlist</title>
   
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700i" rel="stylesheet">
 
@@ -17,8 +16,7 @@
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
 
       <style>
-      body{font-family: 'Roboto Condensed', sans-serif;
-    background: #455A64
+body{    background: #455A64
 }
 #main-wrapper{padding:100px 0;}
 #main-wrapper h1{margin:20px 0;color:#fff;font-family:Roboto, sans-serif;font-weight:900;}
@@ -178,25 +176,13 @@ span.mejs__time-loaded {
 }
     </style>
 
-  <script>
-  window.console = window.console || function(t) {};
-</script>
-
-  
-  
-  <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
-
 </head>
 
-<body translate="no" >
+<body>
 
   <div class="container" id="main-wrapper">
-  <h1>A custom HTML5 Audio Playerwith Dynamic Playlist</h1>
-<div class="player-wrapper>
+  <h1>A Customized HTML5 Audio Player with Playlist</h1>
+<div class="player-wrapper">
 
 <ul class="playlist custom-counter" id="list">
    <li><div class="track-info" >
@@ -220,21 +206,15 @@ span.mejs__time-loaded {
       
       
     </ul>
-<audio id="audio" class="mejs__player" controls="controls" src="">
+<audio class="mejs__player" controls="controls" src="">
   Your browser does not support the audio format.
 </audio>
  
 </div>
 
-  <h1>A Customized HTML5 Audio Player with Playlist</h1>
-  <p>Single Audio File Without Playlist</p>
-<audio class="mejs__player" controls="controls">
-                                                          <source src"/mejs-player/audio/Despacito.mp3" type="audio/mpeg"></source>
-  Your browser does not support the audio format.
-</audio>
+<p>You may also use this player without playlist. for doing so you will have to put just an HTML5 Audio Element tag with <code>class="mejs__player"</code>
 </div>
-    <script src="//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script>
-
+<!-- REAOURCES -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src='https://mymediaelements.github.io/mejs-player/build/mediaelement-and-player.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
@@ -254,11 +234,7 @@ list.onclick = function(e) {
   audio.load(); //call this to just preload the audio without playing
   audio.play(); //call this to play the song right away
 };
-  //# sourceURL=pen.js
   </script>
-
-  
-  
 
 </body>
 </html>
